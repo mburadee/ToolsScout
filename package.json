@@ -1,0 +1,40 @@
+{
+  "name": "saas-directory",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "pipeline": "ts-node --project tsconfig.scripts.json scripts/seed.ts",
+    "db:schema": "echo Run scripts/schema.sql in your Supabase SQL editor",
+    "pipeline:install": "npm install -g ts-node typescript && npm run pipeline"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.106.2",
+    "cheerio": "^1.2.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "lucide-react": "^1.17.0",
+    "next": "16.2.6",
+    "next-sitemap": "^4.2.3",
+    "node-fetch": "^2.7.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
